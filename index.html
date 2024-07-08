@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elma Photography</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+    <nav class="navbar bg-body pt-5 pb-4">
+        <div class="container d-flex justify-content-center">
+            <div>
+                <div class="d-flex justify-content-center align-items-center"><div class="top-line"></div><p class="logo-text-top px-2">KREATIVNE</p><div class="top-line"></div></div>
+          <a class="navbar-brand" href="#">
+            <img src="/images/EP potpis-01.svg" alt="Bootstrap" width="100%" height="auto">
+          </a>
+          <div class="d-flex justify-content-center align-items-center"><div class="bottom-line"></div><p class="logo-text-bottom px-2">FOTOGRAFIJE</p><div class="bottom-line"></div></div>
+    </div>
+      </nav>
+    </header>
+    <main>
+        <!--NAVIGATION-->
+        <ul class="nav container justify-content-center justify-content-center mb-5">
+            <li class="nav-item">
+              <button class="nav-link" href="#" data-category="category-weddings">VJENČANJA</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" href="#" data-category="category-familly">FAMILIJARNE FOTOGRAFIJE</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" href="#" data-category="category-nature">PRIRODA</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" href="#" data-category="category-others">OSTALO</button>
+            </li>
+
+            </li>
+          </ul>
+          <!--PHOTO GALLERY-->
+          <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 align-content-start">
+                <div class="col image-conteiner">
+                    <img class="images category-weddings" src="/images/Ostrozac-wedding.jpg">
+                </div>
+                <div class="col image-conteiner">
+                    <img class="images category-familly" src="/images/ruke.jpg">
+                </div>
+                <div class="col image-conteiner">
+                    <img class="images category-nature" src="/images/nebo.jpg">
+                </div>
+                <div class="col image-conteiner">
+                    <img class="images category-nature" src="/images/drvo.jpg">
+                </div>
+                <div class="col image-conteiner">
+                    <img class="images category-weddings" src="/images/ring.jpg">
+                </div>
+                <div class="col image-conteiner">
+                    <img class="images category-others" src="/images/kafa.jpg">
+                </div>
+                </div>
+            </div>
+            <!--EMAIL FORM-->
+            <div class="container mt-5 d-flex justify-content-around align-items-center">
+            <div class="text-center">
+                <h3>Zakažite</h3>
+                <h2>Photoshooting</h2>
+                <div class="text-start mb-3">
+                    <p>Cazin, Bosna i Hercegovina</p>
+                    <p>info@infomadiz.com</p>
+                    <p>+387 62 428 620</p>
+                    <p>+387 61 742 088</p>
+                </div>
+                <div class="d-flex justify-content-start mb-5">
+                    <div class="px-0"><a href="https://www.facebook.com/PhotographyByElma" target="_blank"><img src="/images/fb.svg"></a></div>
+                    <div class="px-4"><a href="https://www.instagram.com/elma_photo.graphy/" target="_blank"><img src="/images/insta.svg"></a></div>
+                </div>
+            </div>
+            <form class="justify-items-between align-content-center row row-cols-md-1 row-cols-1 g-3">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ime</label>
+                    <input type="text" class="form-control" id="name" required>
+                  </div>
+                <div class="mb-3">
+                    <label for="number" class="form-label">Kontakt broj</label>
+                    <input type="number" class="form-control" id="number" required>
+                  </div>
+                  <div>
+                    <label for="message" class="form-label">Pošaljite upit</label>
+                    <textarea class="mb-3 form-control" id="message" rows="3"></textarea>
+                    <div class="form-button btn btn-primary">Pošalji</div>
+                  </div>
+                  
+            </form>
+            </div>
+          </div>
+    </main>
+    <footer class="mt-5 d-flex justify-content-center align-items-center pt-3">
+    	    <p>Made by <a href="https://infomadiz.com/">INFOMADIZ</a></p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+</body>
+</html>
