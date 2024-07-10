@@ -10,98 +10,271 @@
 <body>
     <!--HEADER-->
     <header>
-    <nav class="navbar bg-body pt-5 pb-4">
-        <div class="container d-flex justify-content-center">
-            <div>
-                <div class="d-flex justify-content-center align-items-center"><div class="top-line"></div><p class="logo-text-top px-2">KREATIVNE</p><div class="top-line"></div></div>
-          <a class="navbar-brand" href="#">
-            <img src="/images/EP potpis-01.svg" alt="Bootstrap" width="100%" height="auto">
-          </a>
-          <div class="d-flex justify-content-center align-items-center"><div class="bottom-line"></div><p class="logo-text-bottom px-2">FOTOGRAFIJE</p><div class="bottom-line"></div></div>
-    </div>
-      </nav>
+        <nav class="navbar bg-body pt-5 pb-4">
+            <div class="container d-flex justify-content-center">
+                <div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="top-line"></div>
+                        <p class="logo-text-top px-2">KREATIVNE</p>
+                        <div class="top-line"></div>
+                    </div>
+                    <a class="navbar-brand" href="#">
+                        <img src="/images/EP potpis-01.svg" alt="Bootstrap" width="100%" height="auto">
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="bottom-line"></div>
+                        <p class="logo-text-bottom px-2">FOTOGRAFIJE</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <!--NAVIGATION-->
+        <div class="d-none d-md-block">
         <ul class="nav container justify-content-center justify-content-center mb-5">
             <li class="nav-item">
-              <button class="nav-link" href="#" data-category="category-weddings">VJENČANJA</button>
+                <button class="nav-link" href="#" data-category="categoryAll">SVE</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link" href="#" data-category="category-familly">FAMILIJARNE FOTOGRAFIJE</button>
+                <button class="nav-link" href="#" data-category="category-weddings">VJENČANJA</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link" href="#" data-category="category-nature">PRIRODA</button>
+                <button class="nav-link" href="#" data-category="category-creative">KREATIVNE FOTOGRAFIJE</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link" href="#" data-category="category-others">OSTALO</button>
+                <button class="nav-link" href="#" data-category="category-nature">PRIRODA</button>
             </li>
-
+            <li class="nav-item">
+                <button class="nav-link" href="#" data-category="category-others">OSTALO</button>
             </li>
-          </ul>
-          <!--PHOTO GALLERY-->
-          <div class="container text-center">
+        </ul>
+      </div>
+        
+        <!--PHOTO GALLERY-->
+        <div class="container text-center d-none d-md-block">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 align-content-start">
-                <div class="col image-conteiner">
-                    <img class="images category-weddings" src="/images/Ostrozac-wedding.jpg">
+                <div class="col image-container images category-weddings">
+                    <img class="img-thumbnail" src="/images/Ostrozac-wedding.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/Ostrozac-wedding.jpg">
                 </div>
-                <div class="col image-conteiner">
-                    <img class="images category-familly" src="/images/ruke.jpg">
+                <div class="col image-container images category-weddings">
+                    <img class="img-thumbnail" src="/images/dark-wedding.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/dark-wedding.jpg">
                 </div>
-                <div class="col image-conteiner">
-                    <img class="images category-nature" src="/images/nebo.jpg">
+                <div class="col image-container images category-weddings">
+                    <img class="img-thumbnail" src="/images/leafs.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/leafs.jpg">
                 </div>
-                <div class="col image-conteiner">
-                    <img class="images category-nature" src="/images/drvo.jpg">
+                <div class="col image-container images category-weddings">
+                    <img class="img-thumbnail" src="/images/Ostrozac.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/Ostrozac.jpg">
                 </div>
-                <div class="col image-conteiner">
-                    <img class="images category-weddings" src="/images/ring.jpg">
+                <div class="col image-container images category-weddings">
+                    <img class="img-thumbnail" src="/images/Slovenija.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/Slovenija.jpg">
                 </div>
-                <div class="col image-conteiner">
-                    <img class="images category-others" src="/images/kafa.jpg">
+                <div class="col image-container images category-weddings" >
+                    <img class="img-thumbnail" src="/images/ring.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/ring.jpg">
                 </div>
+                <div class="col image-container images category-creative">
+                    <img class="img-thumbnail" src="/images/ruke.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/ruke.jpg">
+                </div>
+                <div class="col image-container images category-creative">
+                    <img class="img-thumbnail" src="/images/sesir.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/sesir.jpg">
+                </div>
+                <div class="col image-container images category-creative" >
+                    <img class="img-thumbnail" src="/images/kesten.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/kesten.jpg">
+                </div>
+                <div class="col image-container images category-creative">
+                    <img class="img-thumbnail" src="/images/jesen.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/jesen.jpg">
+                </div>
+                <div class="col image-container images category-creative">
+                    <img class="img-thumbnail" src="/images/ruza-kolac.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/ruza-kolac.jpg">
+                </div>
+                <div class="col image-container images category-creative">
+                    <img class="img-thumbnail" src="/images/brasno.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/brasno.jpg">
+                </div>
+                <div class="col image-container images category-nature">
+                    <img class="img-thumbnail" src="/images/TULIPS.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/TULIPS.jpg">
+                </div>
+                <div class="col image-container images category-nature">
+                    <img class="img-thumbnail" src="/images/drvo-cvijece.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/drvo-cvijece.jpg">
+                </div>
+                <div class="col image-container images category-nature">
+                    <img class="img-thumbnail" src="/images/drvo.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/drvo.jpg">
+                </div>
+                <div class="col image-container images category-nature">
+                    <img class="img-thumbnail" src="/images/plodovi.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/plodovi.jpg">
+                </div>
+                <div class="col image-container images category-nature">
+                    <img class="img-thumbnail" src="/images/crveni-cvijet.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/crveni-cvijet.jpg">
+                </div>
+                <div class="col image-container images category-nature">
+                    <img class="img-thumbnail" src="/images/crveno-cvijece.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/crveno-cvijece.jpg">
+                </div>
+                <div class="col image-container images category-others">
+                    <img class="img-thumbnail" src="/images/macici.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/macici.jpg">
+                </div>
+                <div class="col image-container images category-others">
+                    <img class="img-thumbnail" src="/images/juhka.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/juhka.jpg">
+                </div>
+                <div class="col image-container images category-others">
+                    <img class="img-thumbnail" src="/images/bih.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/bih.jpg">
+                </div>
+                <div class="col image-container images category-others">
+                    <img class="img-thumbnail" src="/images/knjiga.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/knjiga.jpg">
+                </div>
+                <div class="col image-container images category-others">
+                    <img class="img-thumbnail" src="/images/jabuke-sljive.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/jabuke-sljive.jpg">
+                </div>
+                <div class="col image-container images category-others">
+                    <img class="img-thumbnail" src="/images/kafa.jpg" data-bs-toggle="modal" data-bs-target="#imageModal" data-src="/images/kafa.jpg">
+                </div>
+                
+            </div>
+        </div>
+
+       
+
+        <!--CAROUSEL (MOBILE VERSION)-->
+        <div id="imageCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+          
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-category="category-weddings">
+                    <img src="/images/Ostrozac-wedding.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-weddings">
+                    <img src="/images/dark-wedding.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-weddings">
+                    <img src="/images/leafs.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-weddings">
+                    <img src="/images/Ostrozac.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-weddings">
+                    <img src="/images/Slovenija.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-weddings">
+                    <img src="/images/ring.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-creative">
+                    <img src="/images/ruke.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-creative">
+                    <img src="/images/sesir.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-creative">
+                    <img src="/images/kesten.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-creative">
+                    <img src="/images/jesen.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-creative">
+                    <img src="/images/ruza-kolac.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-creative">
+                    <img src="/images/brasno.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-nature">
+                    <img src="/images/TULIPS.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-nature">
+                    <img src="/images/drvo-cvijece.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-nature">
+                    <img src="/images/drvo.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-nature">
+                    <img src="/images/plodovi.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-nature">
+                    <img src="/images/crveni-cvijet.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-nature">
+                    <img src="/images/crveno-cvijece.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-others">
+                    <img src="/images/macici.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-others">
+                    <img src="/images/juhka.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-others">
+                    <img src="/images/bih.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-others">
+                    <img src="/images/knjiga.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-others">
+                    <img src="/images/jabuke-sljive.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-category="category-others">
+                    <img src="/images/kafa.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <!--EMAIL FORM-->
-            <div class="container mt-5 d-flex justify-content-around align-items-center">
-            <div class="text-center">
-                <h3>Zakažite</h3>
-                <h2>Photoshooting</h2>
-                <div class="text-start mb-3">
-                    <p>Cazin, Bosna i Hercegovina</p>
-                    <p>info@infomadiz.com</p>
-                    <p>+387 62 428 620</p>
-                    <p>+387 61 742 088</p>
-                </div>
-                <div class="d-flex justify-content-start mb-5">
-                    <div class="px-0"><a href="https://www.facebook.com/PhotographyByElma" target="_blank"><img src="/images/fb.svg"></a></div>
-                    <div class="px-4"><a href="https://www.instagram.com/elma_photo.graphy/" target="_blank"><img src="/images/insta.svg"></a></div>
-                </div>
+        </div>
+
+        <!--EMAIL FORM-->
+        <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center mb-4">
+            <h3>Zakažite</h3>
+            <h2>Photoshooting</h2>
+            <div class="text-start mb-3">
+                <p>Cazin, Bosna i Hercegovina</p>
+                <p>info@infomadiz.com</p>
+                <p>+387 62 428 620</p>
+                <p>+387 61 742 088</p>
             </div>
-            <form class="justify-items-between align-content-center row row-cols-md-1 row-cols-1 g-3">
+            <div class="d-flex justify-content-center justify-content-md-start">
+                <div class="px-2"><a href="https://www.facebook.com/PhotographyByElma" target="_blank"><img src="/images/fb.svg"></a></div>
+                <div class="px-2"><a href="https://www.instagram.com/elma_photo.graphy/" target="_blank"><img src="/images/insta.svg"></a></div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <form class="g-3">
                 <div class="mb-3">
                     <label for="name" class="form-label">Ime</label>
                     <input type="text" class="form-control" id="name" required>
-                  </div>
+                </div>
                 <div class="mb-3">
                     <label for="number" class="form-label">Kontakt broj</label>
                     <input type="number" class="form-control" id="number" required>
-                  </div>
-                  <div>
+                </div>
+                <div class="mb-3">
                     <label for="message" class="form-label">Pošaljite upit</label>
-                    <textarea class="mb-3 form-control" id="message" rows="3"></textarea>
-                    <div class="form-button btn btn-primary">Pošalji</div>
-                  </div>
-                  
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="form-button btn btn-primary">Pošalji</button>
+                </div>
             </form>
-            </div>
-          </div>
+        </div>
+    </div>
+</div>
     </main>
     <footer class="mt-5 d-flex justify-content-center align-items-center pt-3">
-    	    <p>Made by <a href="https://infomadiz.com/">INFOMADIZ</a></p>
+        <p>Made by <a href="https://infomadiz.com/">INFOMADIZ</a></p>
     </footer>
+
+     
+
     <script type="text/javascript" src="script.js"></script>
-    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0"> <!-- Remove default modal styling -->
+          <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+              <div class="position-relative">
+                  <img src="" id="modalImage" class="img-fluid">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal Container -->
+<div id="modalContainer"></div>
 </body>
 </html>
